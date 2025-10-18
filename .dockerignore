@@ -1,9 +1,0 @@
-__pycache__
-*.pyc
-*.pyo
-.Python
-venv/
-.venv
-*.log
-.git
-.DS_Store
