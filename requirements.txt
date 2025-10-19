@@ -6,4 +6,3 @@ scikit-learn==1.7.1
 joblib==1.4.2
 geopy==2.4.1
 gunicorn==23.0.0
---only-binary :all: scikit-learn
