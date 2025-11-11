@@ -6,7 +6,13 @@ app = Flask(__name__)
 
 # Load the trained model
 model = load("eta_model.joblib")  # Make sure your model is saved with joblib
-
+@app.route("/", methods=["GET"])
+def health():
+    return jsonify({
+        "status": "running",
+        "model": "ETA Predictor v1.0",
+        "framework": "Flask"
+    }), 200
 @app.route("/predict", methods=["POST"])
 def predict_eta():
     """
